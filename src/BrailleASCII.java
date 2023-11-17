@@ -29,8 +29,9 @@ public class BrailleASCII {
             for (int i = 0; i < elem.length; i++) {
                 String braille = tables.toBraille(elem[i]);
                 String unicode = tables.toUnicode(braille);
-                pen.println(Character.toChars(2818)); // When I try to do print(), outputs are overwritten and only the last character remains.
+                pen.print(Character.toChars(Integer.parseInt(unicode, 16))); // When I try to do print(), outputs are overwritten and only the last character remains.
             }
+            pen.println();
         }
     }
 }
