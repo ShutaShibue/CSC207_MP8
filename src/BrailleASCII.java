@@ -9,10 +9,8 @@ public class BrailleASCII {
             char[] elem = args[1].toCharArray();
 
             for (char e : elem) {
-                //pen.println(tables.toBraille(e));  // When I try to do print(), outputs are overwritten and only the last character remains.
                 pen.print(tables.toBraille(e));
             }
-
             pen.println();
         }
 
@@ -20,8 +18,9 @@ public class BrailleASCII {
             
             String[] elem = args[1].split("(?<=\\G.{6})");
             for (int i = 0; i < elem.length; i++) {
-                pen.println(tables.toASCII(elem[i]).toLowerCase()); // When I try to do print(), outputs are overwritten and only the last character remains.
+                pen.print(tables.toASCII(elem[i]).toLowerCase()); // When I try to do print(), outputs are overwritten and only the last character remains.
             }
+            pen.println();
         }
 
         if(args[0].equals("unicode")){
