@@ -37,7 +37,7 @@ public class BrailleASCIITables {
 
     // Ascii → Braille
     public String toBraille(char letter){
-        return AtoB.get(Integer.toBinaryString(letter));
+        return AtoB.get(String.format("%8s", Integer.toBinaryString(letter)).replace(' ', '0'));
     }
 
     // Braille → Ascii
