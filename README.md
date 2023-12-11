@@ -6,7 +6,8 @@ Shuta Shibue
 
 ## Contents
 
-BrailleASCII main class can convert ASCII, braille, and unicode.  
+This project implements character-to-braille conversion to help people with disabilities.  
+BrailleASCII main class can convert ASCII, braille, and unicode and prints it out to output.  
 `BrailleASCII braille msg`: convert msg to braille bits  
 `BrailleASCII ascii 110010`: convert braille bits to ASCII  
 `BrailleASCII unicode hello`: convert msg to unicode braille characters
