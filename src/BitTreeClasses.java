@@ -3,14 +3,14 @@ interface BitTreeNode {
 } // BitTreeNode
 
 
-class BitTreeInteriorNode implements BitTreeNode{
+class BitTreeInteriorNode implements BitTreeNode {
     BitTreeNode left;
     BitTreeNode right;
 
     // +--------------+------------------------------------------------
     // | Constructors |
     // +--------------+
-    public BitTreeInteriorNode(){
+    public BitTreeInteriorNode() {
         this.left = null;
         this.right = null;
     }
@@ -19,11 +19,11 @@ class BitTreeInteriorNode implements BitTreeNode{
         return false;
     } // isLeaf()
 
-    public BitTreeNode left(){
+    public BitTreeNode left() {
         return left;
     }
 
-    public BitTreeNode right(){
+    public BitTreeNode right() {
         return right;
     }
 
@@ -38,15 +38,15 @@ class BitTreeLeaf implements BitTreeNode {
         return true;
     } // isLeaf()
 
-    public String bits(){
+    public String bits() {
         return bits;
     }
 
-    public String value(){
+    public String value() {
         return value;
     }
 
-    public BitTreeLeaf(String bits, String value){
+    public BitTreeLeaf(String bits, String value) {
         this.bits = bits;
         this.value = value;
     }
