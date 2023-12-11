@@ -5,6 +5,11 @@ import java.io.InputStream;
 
 public class BrailleASCIITables {
 
+    /**
+     * Implements Braille-Ascii conversion table.
+     *
+     * @author Shuta Shibue
+     */
     BitTree BtoA;
     BitTree AtoB;
     BitTree BtoU;
@@ -33,20 +38,20 @@ public class BrailleASCIITables {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-    }
+    } // BrailleASCIITables()
 
     // Ascii → Braille
     public String toBraille(char letter) {
         return AtoB.get(String.format("%8s", Integer.toBinaryString(letter)).replace(' ', '0'));
-    }
+    } // toBraille(char)
 
     // Braille → Ascii
     public String toASCII(String bits) {
         return BtoA.get(bits);
-    }
+    } // toASCII(String)
 
     // Braille → Unicode dots
     public String toUnicode(String bits) {
         return BtoU.get(bits);
-    }
+    } // toUnicode(String)
 }

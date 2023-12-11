@@ -1,6 +1,11 @@
 import java.io.PrintWriter;
 
 public class BrailleASCII {
+    /**
+ * Main class that takes commandline input.
+ *
+ * @author Shuta Shibue
+ */
     public static void main(String[] args) {
         BrailleASCIITables tables = new BrailleASCIITables();
         PrintWriter pen = new PrintWriter(System.out, true);

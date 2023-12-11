@@ -7,6 +7,12 @@ class BitTreeInteriorNode implements BitTreeNode {
     BitTreeNode left;
     BitTreeNode right;
 
+    /**
+     * Implements bitTreeNode that holds conversion info.
+     *
+     * @author Shuta Shibue
+     */
+
     // +--------------+------------------------------------------------
     // | Constructors |
     // +--------------+
@@ -21,11 +27,11 @@ class BitTreeInteriorNode implements BitTreeNode {
 
     public BitTreeNode left() {
         return left;
-    }
+    } // left()
 
     public BitTreeNode right() {
         return right;
-    }
+    } // right()
 
 } // class BitTreeInteriorNode
 
@@ -40,15 +46,15 @@ class BitTreeLeaf implements BitTreeNode {
 
     public String bits() {
         return bits;
-    }
+    } // bits()
 
     public String value() {
         return value;
-    }
+    } // value()
 
     public BitTreeLeaf(String bits, String value) {
         this.bits = bits;
         this.value = value;
-    }
+    } // constructor BitTreeLeaf(String, String)
 
 } // class BitTreeLea

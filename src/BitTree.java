@@ -5,6 +5,11 @@ import java.util.NoSuchElementException;
 
 public class BitTree {
 
+    /**
+     * Implements a tree that holds conversion info.
+     *
+     * @author Shuta Shibue
+     */
     BitTreeNode root;
     int size;
 
